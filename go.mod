@@ -1,3 +1,3 @@
-module github.com/pingwazi0101/gocode
+module github.com//baragae/test-time
 
 go 1.17
