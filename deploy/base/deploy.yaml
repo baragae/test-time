@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: pingwazi
-  name: gocode
+  namespace: baragae
+  name: test-time
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: gocode
+      app: test-time
   template:
     metadata:
       labels:
-        app: gocode
+        app: test-time
     spec:
       imagePullSecrets:
         - name: pwz-secret
       containers:
-        - name: gocode
+        - name: test-time
           env:
             - name: ENV
               value: prod
-          image: pingwazi0101/imagename
+          image: baragae/imagename
           resources:
             limits:
               memory: "128Mi"
